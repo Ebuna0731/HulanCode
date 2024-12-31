@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    background: #87CEEB; /* Бүдэг цэнхэр өнгө */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+#snowCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.container {
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.image-container img {
+    width: 150px; /* Зургийн өргөнийг тохируулна */
+    height: auto; /* Пропорцийг хадгална */
+    border-radius: 10px; /* Зургийн буланг зөөлрүүлнэ */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #ff6f61;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff3e30;
+    transform: scale(1.1);
+}
+
+.flower-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px; /* Зургийн хоорондын зай */
+    margin-top: 20px;
+}
+
+.flower-gallery img {
+    width: 120px; /* Зургийн өргөнийг тохируулна */
+    height: 120px; /* Зургийн өндрийг тохируулна */
+    object-fit: cover; /* Зургийн хэмжээг харьцаагаар нь тохируулах */
+    border-radius: 10px; /* Буланг зөөлрүүлэх */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Сүүдэр */
+    transition: transform 0.3s ease;
+}
+
+.flower-gallery img:hover {
+    transform: scale(1.1); /* Зургийг хулганаар дээр нь очиход томруулах */
+}
